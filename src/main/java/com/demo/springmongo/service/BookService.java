@@ -19,7 +19,7 @@ public class BookService {
 	}
 	
 	public void addBook(Book book) {
-		bookRepository.insert(book);
+		bookRepository.save(book);
 	}
 	
 	public List<Book> getAllBooks() {
